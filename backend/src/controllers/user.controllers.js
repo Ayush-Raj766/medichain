@@ -5,9 +5,9 @@ import { ethers } from "ethers";
 /* =====================================================
    CONSTANTS
 ===================================================== */
-const ADMIN_EMAIL = "ayushjais766@gmail.com";
-const ADMIN_PASSWORD = "12345678";
-const ADMIN_WALLET = "0x1b0a9d47f9428fa43605b0ca087062a4c367ccf5".toLowerCase();
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
+const ADMIN_WALLET = process.env.ADMIN_WALLET?.toLowerCase();
 
 /* =====================================================
    LOGIN USER
